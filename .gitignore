@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# NLTK data (downloaded at runtime)
+nltk_data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Trained model artifact — committed so the app runs out of the box.
+# Re-generate via `python train.py` after editing data/intents.json.
+# models/*.joblib
+
+# Logs
+*.log

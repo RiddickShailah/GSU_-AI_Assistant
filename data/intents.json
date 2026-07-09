@@ -1,0 +1,207 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Good morning", "Good afternoon", "What's up",
+        "Hey there", "Is anyone there?", "Hi Panther Bot", "Yo",
+        "Hey can you help me", "Hello there", "Hiya", "What's good",
+        "Good evening", "Anyone available to chat", "Hey I have a question",
+        "Hi I'm a new freshman", "Hello I just got to campus", "Hey Panther Assist"
+      ],
+      "responses": [
+        "Hey Panther! 👋 I'm your GSU Freshman AI Assistant. Ask me about advising, study resources, campus events, or career services.",
+        "Hi there! Welcome to GSU. How can I help you today?",
+        "Hello! I'm here to help you navigate your first year at Georgia State. What do you need?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "See you later", "Goodbye", "I'm leaving", "Have a good day",
+        "Talk to you later", "That's all for now", "I'm done for now",
+        "Catch you later", "Gotta go", "Thanks bye", "I'll talk to you later",
+        "See ya", "Alright I'm heading out", "That's all I needed, bye",
+        "Okay bye now", "I'm signing off", "Later"
+      ],
+      "responses": [
+        "Goodbye! Good luck with your semester — go Panthers! 🔵🔴",
+        "See you later! Don't forget to check your PAWS portal for updates.",
+        "Take care! Reach out anytime you need help."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "That's helpful", "Awesome, thanks",
+        "Thanks for the help", "Appreciate it", "Thank you so much",
+        "That really helped", "Perfect, thank you", "Great, thanks a lot",
+        "Thanks for the info", "You're a lifesaver", "Thanks for clarifying",
+        "That answers my question, thanks", "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome! Happy to help.",
+        "Anytime! Let me know if you need anything else.",
+        "Glad I could help — good luck!"
+      ]
+    },
+    {
+      "tag": "academic_advising",
+      "patterns": [
+        "How do I schedule an appointment with my advisor",
+        "Who is my academic advisor",
+        "I need help picking classes for next semester",
+        "How does academic advising work at GSU",
+        "When should I meet with my advisor",
+        "How do I declare a major",
+        "Can I change my major",
+        "What is a degree audit",
+        "How do I check my degree requirements",
+        "I'm undecided about my major, who can help",
+        "How do I get a registration PIN",
+        "What is the difference between an advisor and a mentor",
+        "How many credit hours do I need to graduate",
+        "What classes should a freshman take first semester",
+        "How do I add or drop a class",
+        "What is the deadline to withdraw from a course",
+        "How do I find my advising hold",
+        "Where is my advisor's office",
+        "Can freshmen double major",
+        "What is Degree Works",
+        "How do I plan my four year schedule",
+        "I want to switch from Exploratory Studies to a specific major",
+        "How do I get an override to register for a full class",
+        "What GPA do I need to stay in my program",
+        "How do I contact the advising office",
+        "Is there a minimum number of credit hours I need each semester",
+        "What happens if I fail a required class",
+        "How do I request a syllabus for course substitution",
+        "Can I take classes at another school and transfer the credit",
+        "How do I know if I'm on track to graduate on time"
+      ],
+      "responses": [
+        "You can schedule an appointment with your academic advisor through the Navigate app or your college's advising office. First-year students are typically assigned an advisor based on their major or the Exploratory Studies program.",
+        "To check your degree requirements and progress, log into PAWS and pull up your Degree Works audit — it shows exactly what's left to complete your degree.",
+        "You can declare or change your major through your college's advising office. It's best to talk to an advisor first to understand how it affects your course plan and graduation timeline."
+      ]
+    },
+    {
+      "tag": "study_resources",
+      "patterns": [
+        "Where can I get tutoring",
+        "Does GSU have free tutoring",
+        "I need help studying for an exam",
+        "Where is the library",
+        "What are the library hours",
+        "How do I book a study room",
+        "Is there a writing center",
+        "Where can I find a study group",
+        "I'm struggling in my math class, what should I do",
+        "Are there supplemental instruction sessions",
+        "What is SI at GSU",
+        "How do I access online tutoring",
+        "Where can I print my assignments on campus",
+        "Does the library have laptops to borrow",
+        "How do I reserve a group study room",
+        "Is there a quiet study space on campus",
+        "Where can I get help with my essay",
+        "Are there review sessions before finals",
+        "How do I find a tutor for chemistry",
+        "What time does the library close during finals week",
+        "Can I get one on one tutoring for free",
+        "Where is the Learning Support Hub",
+        "Is there help available for calculus",
+        "How do I sign up for supplemental instruction",
+        "Are there 24 hour study spaces",
+        "Where can I get textbooks or rent them cheaply",
+        "How do I access online databases for research papers",
+        "Does GSU offer academic coaching",
+        "Where can I find past exams to study from",
+        "Is there a peer mentoring program for studying"
+      ],
+      "responses": [
+        "GSU offers free tutoring through the Learning Support Hub and Supplemental Instruction (SI) sessions for historically tough courses like math, chemistry, and economics. You can find schedules on the GSU Tutoring website.",
+        "The University Library has extended hours during finals week and offers bookable study rooms through their online reservation system. There's also a Writing Studio if you need help with papers.",
+        "If you're struggling in a class, start with your professor's office hours, then check if there's an SI leader assigned to that course — they run free weekly study sessions."
+      ]
+    },
+    {
+      "tag": "campus_events",
+      "patterns": [
+        "What events are happening on campus this week",
+        "Are there any student organizations I can join",
+        "How do I find campus clubs",
+        "What's happening at GSU this weekend",
+        "Is there a freshman orientation event",
+        "Where can I see the campus event calendar",
+        "How do I join a student org",
+        "Are there networking events for freshmen",
+        "What's PantherSync",
+        "Are there sports games this week",
+        "How do I find out about welcome week activities",
+        "Is there a club fair for new students",
+        "Where can I watch a Panthers basketball game",
+        "Are there free events on campus this month",
+        "How do I start my own student organization",
+        "What cultural events are happening at GSU",
+        "Is there a homecoming event this year",
+        "Where can I find concerts or performances on campus",
+        "How do I get involved in Greek life",
+        "Are there volunteer opportunities through student orgs",
+        "What time is the pep rally",
+        "Where do I check in for the involvement fair",
+        "Are there movie nights on campus",
+        "How do I find events near my dorm",
+        "Is there a way to get event notifications on my phone"
+      ],
+      "responses": [
+        "You can browse all student organizations and upcoming events on PantherSync — it's GSU's official hub for clubs, RSOs, and campus activities.",
+        "Check the GSU Events Calendar on the university website for weekly happenings, from guest speakers to Panther athletics games.",
+        "Getting involved is one of the best ways to make GSU feel like home! PantherSync lets you filter events and orgs by your interests."
+      ]
+    },
+    {
+      "tag": "career_services",
+      "patterns": [
+        "How do I build a resume",
+        "Does GSU have a career center",
+        "How do I find an internship",
+        "I need help with interview prep",
+        "Where can I get my resume reviewed",
+        "Are there job fairs at GSU",
+        "How do I use Handshake",
+        "What career services are available for freshmen",
+        "Can I get help with LinkedIn",
+        "How early should I start looking for internships",
+        "Where can I practice mock interviews",
+        "How do I find part time jobs on campus",
+        "Does the career center help with cover letters",
+        "How do I search for jobs after graduation",
+        "Is there career coaching for underclassmen",
+        "What is Handshake used for",
+        "How do I sign up for a career fair",
+        "Where can I find employer info sessions",
+        "How do I network with alumni",
+        "Can freshmen use career services or is it only for seniors",
+        "Where is the career services office located",
+        "How do I get a professional headshot for LinkedIn",
+        "Are there workshops on salary negotiation",
+        "How do I find research opportunities with professors",
+        "What majors have the best job placement"
+      ],
+      "responses": [
+        "The GSU Career Services Center offers free resume reviews, mock interviews, and career coaching — even for freshmen. It's never too early to start!",
+        "You can find internships, part-time jobs, and full-time postings through Handshake, GSU's official career platform. Career Services also hosts job and internship fairs each semester.",
+        "Career Services runs walk-in hours for quick resume or LinkedIn reviews, plus workshops on interview skills throughout the semester."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not totally sure about that one yet. Could you rephrase, or ask me about advising, study resources, campus events, or career services?",
+        "Hmm, I don't have a confident answer for that. Try asking about academics, tutoring, campus life, or careers, and I'll do my best!"
+      ]
+    }
+  ]
+}
