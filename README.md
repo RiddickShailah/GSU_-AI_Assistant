@@ -173,7 +173,11 @@ intents.
 python app.py
 ```
 
-Then open **http://localhost:5000** in your browser.
+Then open **http://localhost:5001** in your browser.
+
+> **macOS note:** Port 5000 is often used by AirPlay Receiver. This app
+> defaults to **5001** to avoid that conflict. Override with
+> `PORT=8080 python app.py` if needed.
 
 The UI includes a live **Classifier Readout** panel that shows, for every
 message, which intent the ML layer predicted and its confidence score — this
