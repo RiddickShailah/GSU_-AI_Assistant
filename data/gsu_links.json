@@ -1,0 +1,42 @@
+{
+  "academic_advising": {
+    "title": "Academic Advising",
+    "links": [
+      { "label": "GSU Advisement Center", "url": "https://advisement.gsu.edu/" },
+      { "label": "Navigate Student (schedule advisor)", "url": "https://gsu.navigate.eab.com/" },
+      { "label": "Schedule advisor FAQ (CAS)", "url": "https://cas.gsu.edu/faq/how-do-i-schedule-an-appointment-with-my-advisor/" }
+    ]
+  },
+  "study_resources": {
+    "title": "Study Resources",
+    "links": [
+      { "label": "University Library", "url": "https://library.gsu.edu/" },
+      { "label": "Tutoring & Academic Support", "url": "https://success.gsu.edu/" },
+      { "label": "Supplemental Instruction", "url": "https://success.gsu.edu/supplemental-instruction/" }
+    ]
+  },
+  "campus_events": {
+    "title": "Campus Events",
+    "links": [
+      { "label": "Panther Involvement Network (PIN)", "url": "https://pin.gsu.edu/" },
+      { "label": "GSU Events Calendar", "url": "https://calendar.gsu.edu/" },
+      { "label": "Student Center Events", "url": "https://studentcenter.gsu.edu/" }
+    ]
+  },
+  "career_services": {
+    "title": "Career Services",
+    "links": [
+      { "label": "University Career Services", "url": "https://career.gsu.edu/students/" },
+      { "label": "Handshake (jobs & events)", "url": "https://gsu.joinhandshake.com/" },
+      { "label": "Career Events Calendar", "url": "https://career.gsu.edu/events/" }
+    ]
+  },
+  "general": {
+    "title": "GSU Resources",
+    "links": [
+      { "label": "Georgia State University", "url": "https://www.gsu.edu/" },
+      { "label": "PAWS Portal", "url": "https://paws.gsu.edu/" },
+      { "label": "iCollege", "url": "https://icollege.gsu.edu/" }
+    ]
+  }
+}

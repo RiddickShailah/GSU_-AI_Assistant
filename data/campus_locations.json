@@ -1,0 +1,10 @@
+[
+  { "id": "loc-sce", "name": "Student Center East", "code": "SCE", "lat": 33.7530, "lng": -84.3850, "description": "Hub for student orgs, dining, and Panther Involvement Network" },
+  { "id": "loc-lib", "name": "University Library North", "code": "LIB", "lat": 33.7520, "lng": -84.3865, "description": "Main library — study rooms, research help, 24hr zones" },
+  { "id": "loc-ucs", "name": "University Career Services", "code": "UCS", "lat": 33.7548, "lng": -84.3862, "description": "25 Park Place NE, Suite 111 — Handshake, career counseling" },
+  { "id": "loc-sp", "name": "Student Center West / Recreation", "code": "SCW", "lat": 33.7518, "lng": -84.3878, "description": "Rec center, wellness, intramural sports" },
+  { "id": "loc-ahl", "name": "Advisement Hub", "code": "ADV", "lat": 33.7535, "lng": -84.3845, "description": "Navigate advising appointments — Atlanta campus" },
+  { "id": "loc-law", "name": "College of Law", "code": "LAW", "lat": 33.7515, "lng": -84.3885, "description": "Law building and moot court" },
+  { "id": "loc-hurt", "name": "Hurt Park", "code": "HURT", "lat": 33.7542, "lng": -84.3848, "description": "Outdoor events and green space" },
+  { "id": "loc-cent", "name": "Centennial Hall", "code": "CENT", "lat": 33.7545, "lng": -84.3870, "description": "Residential and freshman programming" }
+]

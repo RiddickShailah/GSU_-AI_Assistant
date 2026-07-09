@@ -1,0 +1,110 @@
+[
+  {
+    "id": "evt-001",
+    "title": "Panther Welcome Week Mixer",
+    "description": "Meet RSOs, student orgs, and fellow freshmen. Free food, music, and campus resource booths.",
+    "image_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+    "start_at": "2026-08-22T18:00:00-04:00",
+    "end_at": "2026-08-22T20:00:00-04:00",
+    "location": {
+      "name": "Student Center East",
+      "lat": 33.7530,
+      "lng": -84.3850,
+      "building_code": "SCE"
+    },
+    "host_org": "Student Involvement",
+    "category": "social",
+    "rsvp_count": 342,
+    "tags": ["freshman", "welcome-week"]
+  },
+  {
+    "id": "evt-002",
+    "title": "Pre-Law Society Info Session",
+    "description": "Learn about LSAT prep, law school applications, and networking with GSU alumni attorneys.",
+    "image_url": "https://images.unsplash.com/photo-1589829545855-d10d557cf95f?w=800&q=80",
+    "start_at": "2026-09-10T17:00:00-04:00",
+    "end_at": "2026-09-10T18:30:00-04:00",
+    "location": {
+      "name": "College of Law",
+      "lat": 33.7515,
+      "lng": -84.3885,
+      "building_code": "LAW"
+    },
+    "host_org": "Pre-Law Society",
+    "category": "academic",
+    "rsvp_count": 58,
+    "tags": ["career", "law"]
+  },
+  {
+    "id": "evt-003",
+    "title": "Career Closet & Headshot Day",
+    "description": "Free professional attire and headshots for interviews. Drop-in hosted by University Career Services.",
+    "image_url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80",
+    "start_at": "2026-09-15T11:00:00-04:00",
+    "end_at": "2026-09-15T15:00:00-04:00",
+    "location": {
+      "name": "25 Park Place NE, Suite 111",
+      "lat": 33.7548,
+      "lng": -84.3862,
+      "building_code": "UCS"
+    },
+    "host_org": "University Career Services",
+    "category": "career",
+    "rsvp_count": 127,
+    "tags": ["career", "handshake"]
+  },
+  {
+    "id": "evt-004",
+    "title": "Decatur Student Involvement Fair",
+    "description": "Connect with campus resources, orgs, and career tools — VMock, Handshake, Steppingblocks demos.",
+    "image_url": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
+    "start_at": "2026-09-17T10:00:00-04:00",
+    "end_at": "2026-09-17T14:00:00-04:00",
+    "location": {
+      "name": "Perimeter College Decatur",
+      "lat": 33.7751,
+      "lng": -84.2963,
+      "building_code": "PCD"
+    },
+    "host_org": "Student Involvement",
+    "category": "social",
+    "rsvp_count": 89,
+    "tags": ["perimeter", "involvement"]
+  },
+  {
+    "id": "evt-005",
+    "title": "Library Study Skills Workshop",
+    "description": "Learn research databases, citation tools, and quiet study zones at University Library.",
+    "image_url": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80",
+    "start_at": "2026-09-20T14:00:00-04:00",
+    "end_at": "2026-09-20T15:30:00-04:00",
+    "location": {
+      "name": "University Library North",
+      "lat": 33.7520,
+      "lng": -84.3865,
+      "building_code": "LIB"
+    },
+    "host_org": "University Library",
+    "category": "academic",
+    "rsvp_count": 44,
+    "tags": ["study", "library"]
+  },
+  {
+    "id": "evt-006",
+    "title": "Black Student Alliance Welcome BBQ",
+    "description": "Community cookout on the green — music, games, and org sign-ups for freshmen.",
+    "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
+    "start_at": "2026-08-28T17:00:00-04:00",
+    "end_at": "2026-08-28T20:00:00-04:00",
+    "location": {
+      "name": "Hurt Park",
+      "lat": 33.7542,
+      "lng": -84.3848,
+      "building_code": "HURT"
+    },
+    "host_org": "Black Student Alliance",
+    "category": "social",
+    "rsvp_count": 201,
+    "tags": ["bsa", "welcome-week"]
+  }
+]
