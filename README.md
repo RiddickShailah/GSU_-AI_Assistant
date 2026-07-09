@@ -3,15 +3,14 @@
 **Machine Learning Chatbot for Georgia State University Freshmen**
 *Spring 2026*
 
-A hybrid AI chatbot system built for GSU freshmen that combines a supervised
-machine learning classification layer with a natural language processing
-pipeline to deliver context-aware conversational support across **academic
-advising**, **study resources**, **campus events**, and **career services**.
+A hybrid AI chatbot + **campus hub** for GSU freshmen. Combines ML intent classification with:
 
-> This is a portfolio / capstone-style project and is **not an official
-> Georgia State University product**. It's built to demonstrate an
-> institution-scale conversational AI architecture, using GSU's freshman
-> experience as the applied use case.
+- **Chat tab** — AI assistant with live classifier readout, quick prompts, and official GSU links in every reply
+- **Events tab** — Instagram-style feed with photos, RSVP, and calendar export (.ics)
+- **Campus Map tab** — Leaflet map with building pins and event location pins
+- **GSU Links tab** — verified links to Advisement, Navigate, Handshake, Career Services, PAWS, iCollege
+
+> This is a portfolio / capstone-style project and is **not an official Georgia State University product**.
 
 ---
 
@@ -22,6 +21,7 @@ advising**, **study resources**, **campus events**, and **career services**.
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Run locally (see the UI)](#run-locally-see-the-ui)
+- [App tabs & features](#app-tabs--features)
 - [Deploy](#deploy)
 - [Training the Model](#training-the-model)
 - [API Reference](#api-reference)
@@ -84,33 +84,36 @@ context" without touching the classifier or the NLP pipeline at all.
 
 ```
 gsu-ai-assistant/
-├── app.py                      # Flask app: routes + response generation
-├── train.py                    # Trains + evaluates the intent classifier
-├── requirements.txt
-├── .gitignore
-├── README.md
-│
-├── chatbot/
-│   ├── __init__.py
-│   ├── nlp_pipeline.py         # Tokenization, lemmatization, cleaning
-│   └── model.py                # IntentClassifier (CountVectorizer + LogisticRegression)
-│
+├── app.py                      # Flask routes + enhanced response layer
+├── services/events.py          # Events feed, RSVP, calendar (.ics)
 ├── data/
-│   └── intents.json            # Training data: patterns + responses per intent
-│
-├── models/
-│   └── intent_classifier.joblib  # Pre-trained model (included in repo)
-│
-├── templates/
-│   └── index.html              # Chat UI
-│
-├── static/
-│   ├── style.css                # GSU-branded UI + live classifier readout
-│   └── script.js
-│
-└── tests/
-    └── test_chatbot.py         # NLP pipeline + classifier unit tests
+│   ├── intents.json            # ML training data
+│   ├── events.json             # Campus events with images + locations
+│   ├── campus_locations.json   # Building pins for map
+│   └── gsu_links.json          # Official GSU URLs by intent
+├── templates/index.html        # Multi-tab shell (Chat · Events · Map · Links)
+├── static/app.js               # Tab router, chat, events feed, map
+└── chatbot/                    # NLP pipeline + intent classifier
 ```
+
+---
+
+## App tabs & features
+
+| Tab | What it does |
+|---|---|
+| **💬 Chat** | Ask about advising, study resources, events, careers. Replies include official GSU links and event cards. |
+| **📸 Events** | Browse club events, RSVP, download your calendar (.ics). Stories row at top. |
+| **🗺️ Map** | Campus building markers + event location pins (Leaflet). |
+| **🔗 GSU Links** | Direct links to [Advisement](https://advisement.gsu.edu/), [Navigate](https://gsu.navigate.eab.com/), [Handshake](https://gsu.joinhandshake.com/), [Career Services](https://career.gsu.edu/students/), [PAWS](https://paws.gsu.edu/), and more. |
+
+**API endpoints:**
+- `POST /api/chat` — chat with structured replies (links, events, actions)
+- `GET /api/events` — event feed
+- `POST /api/events/<id>/rsvp` — RSVP to an event
+- `GET /api/events/calendar.ics` — download calendar
+- `GET /api/campus/locations` — map pins
+- `GET /api/links` — official GSU resource links
 
 ---
 
@@ -158,11 +161,10 @@ python app.py
 
 Open **http://localhost:5001** in your browser.
 
-> **macOS note:** Port 5000 is often used by AirPlay Receiver. This app
-> defaults to **5001**. Override with `PORT=8080 python app.py` if needed.
+> **macOS note:** Port 5000 is often used by AirPlay Receiver. This app defaults to **5001**.
 
-The chat UI includes a live **Classifier Readout** panel on the left that
-shows the predicted intent and confidence for every message you send.
+Explore all four tabs: **Chat**, **Events**, **Map**, and **GSU Links**.
+Try the quick prompts or RSVP to an event in the Events tab. The Chat tab shows a live **Classifier Readout** with intent + confidence for every message.
 
 ---
 
